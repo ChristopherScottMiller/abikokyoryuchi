@@ -11,7 +11,7 @@ import net.corda.core.transactions.LedgerTransaction
 class WarrantyContract : Contract {
     companion object {
         // Used to identify our contract when building a transaction.
-        const val ID = "com.abiko.contracts.WarrantContract"
+        const val ID = "com.abiko.contracts.WarrantyContract"
     }
 
     // A transaction is valid if the verify() function of the contract of all the transaction's input and output states

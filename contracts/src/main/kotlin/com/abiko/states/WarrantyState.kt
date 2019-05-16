@@ -10,7 +10,7 @@ import net.corda.core.identity.Party
 // *********
 // * State *
 // *********
-@BelongsToContract(WarrantyContract::class)
+@BelongsToContract(com.abiko.contracts.WarrantyContract::class)
 data class WarrantyState(
         val WarrantyID: String,
         val ManufacturerID: Party,
