@@ -39,7 +39,7 @@ class WarrantyIssueFlow(val WarrantyID: String,
     }
 }
 
-@InitiatedBy(Initiator::class)
+@InitiatedBy(WarrantyIssueFlow::class)
 class WarrantyIssueFlowResponder(private val otherPartySession: FlowSession) : FlowLogic<Unit>() {
     @Suspendable
     override fun call() {
@@ -47,3 +47,5 @@ class WarrantyIssueFlowResponder(private val otherPartySession: FlowSession) : F
         subFlow(ReceiveFinalityFlow(otherPartySession))
     }
 }
+
+
