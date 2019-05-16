@@ -1,6 +1,6 @@
 package com.abiko.states
 
-import com.template.contracts.TemplateContract
+import com.abiko.contracts.TemplateContract
 import net.corda.core.contracts.BelongsToContract
 import net.corda.core.contracts.ContractState
 import net.corda.core.identity.AbstractParty
